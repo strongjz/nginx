@@ -40,7 +40,7 @@ jobs:
         empty-workspace: true
         archs: x86_64,aarch64,armv7
 
-    - uses: distroless/actions/apko-snapshot@main
+    - uses: strongjz/actions/apko-snapshot@scans
       with:
         config: apko.yaml
         base-tag: ghcr.io/${{ github.repository }}
