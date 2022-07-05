@@ -25,6 +25,7 @@ jobs:
       id-token: write
       packages: write
       contents: read
+      security-events: write # needed for uploading sarif results to github security
 
     steps:
     - uses: actions/checkout@v3
